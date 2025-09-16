@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar'
 import HomePage from './pages/HomePage'
-import ProductPage from './pages/productPage'
+import ProductPage from './pages/ProductPage'
 import { Toaster } from "react-hot-toast";
 import { useThemeStore } from "./store/useThemeStore";
 
