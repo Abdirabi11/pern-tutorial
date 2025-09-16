@@ -4,9 +4,10 @@ import { Link, useResolvedPath } from 'react-router'
 import ThemeSelector from './ThemeSelector'
 
 function Navbar() {
-  const pathName= useResolvedPath()
-  const products= []
-  const isHomePage= pathName === "/"
+  const { pathname } = useResolvedPath();
+  const isHomePage = pathname === "/";
+
+  const { products } = useProductStore();
   return (
     <div className="bg-base-100/80 backdrop-blur-lg border-b border-base-content/10 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto">
